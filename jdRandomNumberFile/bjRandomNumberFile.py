@@ -8,8 +8,7 @@ FILENAME = './randomNumbers.txt'
 def main():
 	# Ask user for number of random numbers to generate
 	numbers = int(input('How many random numbers would you like to generate? '))
-	print() # Blank line
-
+	
 	# Call 'create_file()' passing 'numbers' as the argument
 	#		in order to generate the proper number of random
 	#		numbers
@@ -42,7 +41,7 @@ def read_file(file):
 		line_sum += int(line)
 
 	inFile.close() # Close the file
-	
+
 	for x in range(0,5):
 		print('.')
 
