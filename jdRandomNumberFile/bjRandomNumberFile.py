@@ -35,17 +35,21 @@ def create_file(num):
 #		to the 'line_sum' accumulator. It then prints
 #		the result.
 def read_file(file):
+	counter = 0
 	line_sum = 0 # Initialize accumulator
 	inFile = open(FILENAME, 'r') # Open FILENAME in read mode
 	for line in inFile:
 		line_sum += int(line)
+		counter += 1
 
 	inFile.close() # Close the file
 
 	for x in range(0,5):
 		print('.')
 
-	print('The sum of all the random numbers in ' + FILENAME + ' is: ' + str(line_sum))
+	print('Sum of random numbers:\t' + str(line_sum))
+	print('Random numbers found:\t' + str(counter))
+	
 
 # Start the program
 main()
