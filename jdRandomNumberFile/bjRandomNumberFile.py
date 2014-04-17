@@ -28,7 +28,7 @@ def create_file(num):
 	for x in range(0,num):
 		outFile.write(str(random.randint(1,1000))+'\n')
 	
-	outFile.close()
+	outFile.close() # Close the file
 
 # 'Read_file()' takes one parameter (the filename).
 #		It opens the 'randomNumbers.txt' file in
@@ -41,10 +41,11 @@ def read_file(file):
 	for line in inFile:
 		line_sum += int(line)
 
-	inFile.close()
+	inFile.close() # Close the file
+	
 	for x in range(0,5):
 		print('.')
-		
+
 	print('The sum of all the random numbers in ' + FILENAME + ' is: ' + str(line_sum))
 
 # Start the program
