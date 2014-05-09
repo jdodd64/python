@@ -36,7 +36,8 @@ def get_rainfall():
 	while i < 12:
 		try:
 			# Get user input and append it to a list
-			list.append(int(input('Enter the amount of rainfall for month ' + str(i+1) + ': ')))
+			# This seemed to work ok
+			list.append(int(input(str(i+1) + '. Enter the amount of rainfall for ' + (determine_month(i)) + ': ')))
 			i += 1
 		except ValueError: # Handle non-integer input
 			print('You did not enter a valid number. Please try again.')
