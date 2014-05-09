@@ -33,6 +33,12 @@ def main():
 def get_rainfall():
 	i = 0
 	list = []
+	
+	# Add this just to explain program to user
+	print('In this program you will enter rainfall data for each month of the year')
+	print()
+	print()
+	
 	while i < 12:
 		try:
 			# Get user input and append it to a list
